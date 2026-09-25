@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Weather</string>
     <string name="title_activity_map">Weather</string>
+    <string name="weather_loading">Loading weather…</string>
+    <string name="weather_error">Failed to load weather. Tap to retry.</string>
+    <string name="weather_no_api_key">OpenWeatherMap API key is missing. Add OWM_API_KEY to local.properties.</string>
+    <string name="location_permission_denied">Location permission is required to show the weather for your position.</string>
+    <string name="location_unavailable">Current location is unavailable. Tap to retry.</string>
 </resources>

@@ -66,7 +66,7 @@ public class WeatherResponse {
     }
 
     public static class Wind{
-            public int speed; //7
+            public double speed; //7.2
             public int deg; //10
 
         @Override
@@ -104,6 +104,13 @@ public class WeatherResponse {
 
     public List<Weather> getWeather() {
         return weather;
+    }
+
+    /**
+     * @return the first weather condition or {@code null} if the response contains none
+     */
+    public Weather getFirstWeather() {
+        return weather == null || weather.isEmpty() ? null : weather.get(0);
     }
 
     public String getBase() {
